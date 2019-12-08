@@ -95,9 +95,9 @@ class AdminUsersController extends Controller
             $photo=Photo::create(['file'=>$name]);
             $input['photo_id']=$photo->id;
         }
+        $input['password']=bcrypt($request->password);
         $user->update($input);
         return redirect('/admin/users');
-
     }
 
     /**

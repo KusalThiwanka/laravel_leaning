@@ -1,1 +1,12 @@
-#admin-page{padding-top:0}
+#admin-page {
+  padding-top: 0px;
+}
+
+#nested-comment {
+  margin-top: 60px;
+}
+
+.comment-reply {
+  display: none;
+}
+
